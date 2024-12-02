@@ -1,21 +1,21 @@
-# **MSA 프로젝트**
+# **Board API MSA 프로젝트**
 
-## **소개**
+## **개요**
 
+간단한 게시판 API를 마이크로서비스 아키텍쳐로 구현해보았습니다.   
 이 프로젝트는 **Spring Cloud**와 **마이크로서비스 아키텍처**를 학습하고 실습하기 위해 시작되었습니다.   
 최신 기술 스택을 활용하여 확장 가능하고 유연한 마이크로서비스 환경을 구축하는 것을 목표로 합니다.   
-간단한 게시판 API를 유저 서비스, 게시글 서비스, 댓글 서비스로 쪼개어 구현하였습니다.
 
 ## **구성 요소**
 
-Project가 포함하는 마이크로서비스 및 구성 요소는 다음과 같습니다:
+프로젝트에 포함되는 마이크로서비스 및 구성 요소는 다음과 같습니다:
 
-- **Config Server**: 중앙화된 설정 관리 서버
-- **Eureka Service Registry**: 서비스 디스커버리를 위한 레지스트리
-- **API Gateway**: 외부 요청을 각 마이크로서비스로 라우팅
-- **User Service**: 사용자 관리 서비스
-- **Post Service**: 게시글 관리 서비스
-- **Comment Service**: 댓글 관리 서비스
+- [**Config Server**](https://github.com/board-api-msa/config-server): 중앙화된 설정 관리 서버
+- [**Eureka Service Registry**](https://github.com/board-api-msa/eureka-server): 서비스 디스커버리를 위한 레지스트리
+- [**API Gateway**](https://github.com/board-api-msa/gateway-server): 외부 요청을 각 마이크로서비스로 라우팅
+- [**User Service**](https://github.com/board-api-msa/user-service): 사용자 관리 서비스
+- [**Post Service**](https://github.com/board-api-msa/post-service): 게시글 관리 서비스
+- [**Comment Service**](https://github.com/board-api-msa/comment-service): 댓글 관리 서비스
 - **Kafka Broker**: 비동기 메시징을 위한 카프카
 - **Resilience4j 적용**: 회복성 있는 서비스 통신 구현
 
@@ -41,6 +41,3 @@ Project가 포함하는 마이크로서비스 및 구성 요소는 다음과 같
 - **분산 설정 관리** 및 **API 게이트웨이** 구축
 - **회복성 패턴** 적용을 통한 시스템 안정성 향상
 - **카프카**를 통한 이벤트 주도 아키텍처 구축 및 **데이터 무결성** 유지
-
-
-
