@@ -19,14 +19,26 @@
 - **Kafka Broker**: 비동기 메시징을 위한 카프카
 - **Resilience4j 적용**: 회복성 있는 서비스 통신 구현
 
+## **실행 환경**
+- **Docker**
+- **Kubernetes**
+
+### **실행 명령어**
+```cmd
+helm install board-api oci://ghcr.io/board-api-msa/chart-release/board-api-msa --version 0.1.0
+```
+
+- 명령어 실행후 서비스가 완전히 준비되기까지 15~20초 정도 소요됩니다.   
+- Gateway Server가 노출하는 포트는 **31000**번입니다.
+
 ## **기술 스택**
 
 프로젝트에서 사용된 주요 기술은 다음과 같습니다:
 
-- **자바 21**
-- **스프링 부트**
-- **스프링 시큐리티**
-- **스프링 클라우드**
+- **Java 21**
+- **Spring Boot**
+- **Spring Security**
+- **Spring Cloud**
   - Config Server
   - Eureka
   - Gateway
